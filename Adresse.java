@@ -4,6 +4,8 @@ public class Adresse implements Datenelement
     private String vorname;
     private String email;
     private String telefon;
+
+    // Konstruktor
     
     public Adresse(String nachname, String vorname, String email, String telefon)
     {
@@ -13,34 +15,46 @@ public class Adresse implements Datenelement
         this.telefon = telefon;
     }
     
+    // Setter
+
     public void emailAendern(String emailNeu) {
         this.email = emailNeu;
     }
+
     public void telefonAendern(String telefonNeu) {
         this.telefon = telefonNeu;
     }
+    
+    // Getter
+
     public String nachnameGeben() {
         return nachname;
     }
+
     public String vornameGeben() {
         return vorname;
     }
+
     public String emailGeben() {
         return email;
     }
+
     public String telefonGeben() {
         return telefon;
     }
+
+    // Hilfsmethode
     
-    public String schluesselAlsStringGeben() {
+    private String schluesselAlsStringGeben() {
         return nachname + ", " + vorname;
     }
-    
+
     // Methoden, die als Datenelement gefordert sind
-    
+
     public void informationAusgeben() {
+        // ergaenzen
     }
-    
+
     public boolean schluesselIstGleich(String s) {
         return s.equals(this.schluesselAlsStringGeben());
     }
@@ -53,14 +67,15 @@ public class Adresse implements Datenelement
         Adresse a = (Adresse) d;
         return this.schluesselAlsStringGeben().compareTo(a.schluesselAlsStringGeben()) < 0;   
     }
+
     public boolean istGroesserAls(Datenelement d) {
-                Adresse a = (Adresse) d;
+        Adresse a = (Adresse) d;
         return this.schluesselAlsStringGeben().compareTo(a.schluesselAlsStringGeben()) > 0;   
     }
+
     public boolean istGleich(Datenelement d) {
         Adresse a = (Adresse) d;
         return this.schluesselAlsStringGeben().compareTo(a.schluesselAlsStringGeben()) == 0;           
     }
 
-    
 }
