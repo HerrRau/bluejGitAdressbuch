@@ -8,10 +8,12 @@ public abstract class ControllerUmsetzung implements Controller
     {
     }
     
+    @Override
     public void modelSetzen(Model m) {
         this.model = m;
     }
 
+    @Override
     public void viewSetzen(View v) {
         this.view = v;
     }

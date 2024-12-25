@@ -6,7 +6,7 @@ public interface Model
     void emailAendern(String suchschluessel, String email);
     void telefonAendern(String suchschluessel, String telefon);
     
-    void setzeView(View v);
+    void viewSetzen(View v);
 
 
 }

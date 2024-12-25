@@ -5,7 +5,7 @@ public interface Controller
     void telefonAendern(String suchschluessel, String telefon);
     void emailAendern(String suchschluessel, String email);
     
-    void setzeModel(Model m);
-    void setzeView(View v);
+    void modelSetzen(Model m);
+    void viewSetzen(View v);
 
 }
