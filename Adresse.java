@@ -52,7 +52,7 @@ public class Adresse implements Datenelement
     // Methoden, die als Datenelement gefordert sind
 
     public void informationAusgeben() {
-        // ergaenzen
+        System.out.println("unnoetig");
     }
 
     public boolean schluesselIstGleich(String s) {
