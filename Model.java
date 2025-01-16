@@ -1,11 +1,10 @@
 public interface Model
 {
-    void adresseEintragen(Adresse a);    
-    Adresse adresseSuchen(String suchschluessel);
-    void emailAendern(String suchschluessel, String email);
-    void telefonAendern(String suchschluessel, String telefon);
-    
-    void viewSetzen(View v);
+    public void adresseEintragen(Adresse a);    
+    public Adresse adresseSuchen(String suchschluessel);
+    public void emailAendern(String suchschluessel, String email);
+    public void telefonAendern(String suchschluessel, String telefon);
+    public void viewSetzen(View v);
 
 
 }

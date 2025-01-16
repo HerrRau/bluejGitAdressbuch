@@ -10,7 +10,7 @@ public abstract class ModelUmsetzung implements Model
         this.view = v;
     }
 
-    protected void anzahlEintraegeSenden(int i) {
+    public void anzahlEintraegeSenden(int i) {
         if (view!=null) {
             view.anzahlEintraegeAnzeigen(i);
         }
